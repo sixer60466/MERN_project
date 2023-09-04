@@ -1,13 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/header';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import FrontendRoutes from './routes/FrontendRoutes';
+import BackendRoutes from './routes/BackendRoutes';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    
-      <Header/>
-    
+    <Router>
+      <Switch>
+        <Route exact path="/" component={FrontendRoutes} />
+        <Route path="/admin" component={BackendRoutes}/>
+      </Switch>
+    </Router>
   );
 }
 
