@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={FrontendRoutes} />
-        <Route path="/admin" component={BackendRoutes}/>
+        <Route path="/admin" conponent={BackendRoutes}/>
+        <Route path="/" component={FrontendRoutes} />
       </Switch>
     </Router>
   );
