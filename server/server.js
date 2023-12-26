@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 
 //MongoDB
-mongoose.connect('mongodb://localhost:27017/kc161', {
+mongoose.connect('mongodb://127.0.0.1:27017', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });

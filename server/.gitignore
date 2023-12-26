@@ -1,0 +1,17 @@
+# Dependency directories
+/node_modules
+
+# Output directories
+/build/
+/dist/
+
+# Logs
+/logs/
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
